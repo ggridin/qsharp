@@ -18,6 +18,7 @@ members = [
     "compiler/qsc_partial_eval",
     "compiler/qsc_passes",
     "compiler/qsc_project",
+    "compiler/qsc_qasm3",
     "compiler/qsc_rir",
     "fuzz",
     "katas",
@@ -54,12 +55,17 @@ indoc = "2.0"
 js-sys = "0.3"
 libfuzzer-sys = "0.4"
 log = "0.4"
-miette = "5"
+miette = { version = "7.2", features = ["fancy-no-syscall"] }
 thiserror = "1.0"
 nalgebra = { version = "0.33" }
 num-bigint = "0.4"
 num-complex = "0.4"
 num-traits = "0.2"
+oq3_source_file = "0.6.0"
+oq3_syntax = "0.6.0"
+oq3_parser = "0.6.0"
+oq3_lexer = "0.6.0"
+oq3_semantics = "0.6.0"
 probability = "0.20"
 indenter = "0.3"
 regex-lite = "0.1"
@@ -70,7 +76,7 @@ wasm-bindgen = "0.2"
 wasm-bindgen-futures = "0.4"
 rand = "0.8"
 serde_json = "1.0"
-pyo3 = "0.20"
+pyo3 = "0.22"
 quantum-sparse-sim = { git = "https://github.com/qir-alliance/qir-runner", tag = "v0.7.4" }
 async-trait = "0.1"
 tokio = { version = "1.35", features = ["macros", "rt"] }
